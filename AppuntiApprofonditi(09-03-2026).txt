@@ -1,0 +1,116 @@
+LEZIONE 1
+
+Fondamenti di Informatica: Memoria e Variabili
+
+1. L'Approccio alla Programmazione
+
+Prima di scrivere codice, è fondamentale definire la logica di programmazione. Il modo di pensare corretto prevede che l'idea e la strategia vengano prima della scelta del linguaggio da utilizzare.
+
+
+2. Le Memorie: RAM vs Disco
+
+Il computer gestisce i dati attraverso due tipi principali di memoria:
+
+Disco (HDD o SSD): È la memoria con sistema di persistenza. I dati rimangono conservati anche quando la macchina viene spenta.
+
+
+Esempio: Il salvataggio della campagna di un videogioco.
+
+RAM (Random Access Memory): È una memoria temporanea. Mantiene i dati necessari ai programmi mentre sono in esecuzione. Quando si spegne la macchina, i dati nella RAM vengono persi.
+
+
+Esempio: Il punteggio corrente o le vite di un personaggio durante una partita.
+
+Nota: Per scrivere programmi, la memoria principale da tenere in considerazione è la RAM.
+
+
+
+3. Le Variabili
+
+La variabile è uno spazio di memoria preso dalla RAM. Puoi immaginarla come una singola "cella" o un cassetto all'interno di un grande armadio (la RAM).
+
+Concetti Chiave:
+Identificatore: È il nome che diamo alla variabile (es. livello).
+
+Dato: È il contenuto effettivo memorizzato nel "cassetto".
+
+Assegnazione: L'atto di inserire un dato in una variabile, rappresentato dal simbolo =.
+
+Regola d'oro: A sinistra dell'uguale c'è sempre la variabile (il contenitore), a destra c'è il dato (il contenuto).
+
+Inizializzazione: Quando una variabile appare per la prima volta nel codice.
+
+Aggiornamento: Quando cambiamo il contenuto di una variabile già esistente. Una variabile può contenere solo un valore alla volta; se inseriamo un nuovo dato, quello vecchio viene sovrascritto.
+
+Variabili "Parlanti"
+È essenziale dare nomi chiari e descrittivi alle variabili per rendere il codice comprensibile a chi lo legge.
+
+Esempio non chiaro: a, b, c.
+
+
+Esempio chiaro: livello, punteggio, nome_personaggio.
+
+
+4. Operazioni e Tipi di Dati
+
+Stringhe e NumeriStringa: Una sequenza alfanumerica (numeri e caratteri) racchiusa tra virgolette " ".
+
+Concatenazione: Se "sommi" due stringhe o una stringa e un numero, non ottieni una somma aritmetica ma un'unione.
+
+Somma Aritmetica: Avviene solo tra valori numerici.
+
+Casting (Conversione)
+Il comando int() serve a trasformare un dato (come una stringa numerica) in un numero intero.
+
+print(int(n_1) + int(n_2)): La conversione è temporanea e serve solo per il comando di stampa.
+
+n_1 = int(n_1): La conversione è permanente, cambiando il tipo di variabile per tutto il resto del programma.
+
+
+
+5. Logica di Incremento
+
+Contatore: Una variabile che si aggiorna per STEP fissi (es. contatore = contatore + 1).
+
+
+Totalizzatore: Una variabile che somma tra loro altre variabili per accumulare un totale (es. punti = punti + n).
+
+
+6. Strumenti del Programmatore
+
+PRINT: Comando per mostrare a schermo il contenuto di una variabile o un valore.
+
+
+print(livello) -> Mostra il valore contenuto (es. 1).
+
+
+print("livello") -> Mostra la parola testuale "livello".
+
+
+
+Approfondimenti Utili
+
+1. Perché la RAM è "Random"?
+Il termine Random Access Memory (Memoria ad Accesso Casuale) significa che il computer può leggere o scrivere dati in qualsiasi cella della memoria con la stessa velocità, senza doverle scorrere tutte in ordine. Per noi programmatori, l'assegnazione della cella è gestita automaticamente dal sistema in modo casuale.
+
+2. L'ordine delle operazioni nell'assegnazione
+Quando scrivi livello = livello + 1, il computer lavora così:
+
+Guarda prima a destra dell'uguale.
+
+Prende il valore attuale di livello (es. 1) e aggiunge 1.
+
+Ottiene il risultato (2).
+
+Lo salva nella variabile a sinistra, sovrascrivendo il vecchio valore.
+
+3. Errori comuni nel Debugging
+Esistono due tipi di errori che cercherai con il debug:
+
+Errori di Sintassi: Il codice non parte perché hai scritto male un comando (es. dimenticare una parentesi).
+
+Errori di Logica: Il codice gira, ma il risultato è sbagliato (es. volevi sommare ma hai concatenato delle stringhe).
+
+Ti piacerebbe approfondire come si scrivono questi concetti in un linguaggio specifico (come Python) o preferisci vedere altri esempi di "variabili parlanti" applicate a casi reali?
+
+DEBUG: L'attività di controllare il comportamento delle variabili per individuare e correggere errori nel codice.
